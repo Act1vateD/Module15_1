@@ -38,10 +38,18 @@ body {
   font-size: 15px;
 }
 
-.btn--magic .btn_icon {
-  animation-duration: 1s;
-  animation-name: magic;
-  animation-iteration-count: infinite;
+.play_btn .svg-play {
+  display: block;
+}
+.play_btn .svg-pause {
+  display: none;
+}
+
+.play_btn.play_btn--toggle .svg-play {
+  display: none;
+}
+.play_btn.play_btn--toggle .svg-pause {
+  display: block;
 }
 
 @keyframes magic {
